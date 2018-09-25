@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
 
-    getRandomFact: function () {
-        return axios.get("https://geek-jokes.sameerkumar.website/api")
-    }
+  saveContact: function(contactData) {
+    return axios.post("/api/articles", contactData);
+  }
 };
