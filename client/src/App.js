@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Main from "./pages/Main";
+import Contact from "./pages/Contact";
 
 
 const App = () =>
@@ -14,6 +15,7 @@ const App = () =>
       <Navbar />
       <Route exact path="/" component={Landing} />
       <Route exact path="/main" component={Main} />
+      <Route exact path="/contact" component= {Contact} />
       <Footer />
     </div>
   </Router>
