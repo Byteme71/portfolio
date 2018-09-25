@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,19 +8,20 @@ import Main from "./pages/Main";
 import Contact from "./pages/Contact";
 
 
-const App = () =>
+const App = () => (
   
   <Router>
     <div>
       <Navbar />
       <Route exact path="/" component={Landing} />
       <Route exact path="/main" component={Main} />
-      <Route exact path="/contact" component= {Contact} />
+      <Route exact path="/contact" component={Contact} />
       <Footer />
     </div>
   </Router>
 
 
+);
 
 // class App extends Component {
 //   render() {
